@@ -17,7 +17,7 @@ services:
       # Set the appropriate timezone for your location (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g:
       TZ: 'Europe/Amsterdam'
       # Set a password to access the web interface. Not setting one will result in a random password being assigned
-      FTLCONF_webserver_api_password: 'correct horse battery staple'
+      FTLCONF_webserver_api_password: 'supersecret'
       FTLCONF_dns_listeningMode: 'all'
     # Volumes store your data between container upgrades
     volumes:
