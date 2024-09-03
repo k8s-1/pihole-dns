@@ -1,4 +1,4 @@
-# Pihole DNS server
+# Pihole DNS + adblock server
 
 ```
 ./run.sh
