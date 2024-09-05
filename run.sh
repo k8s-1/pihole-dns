@@ -1,12 +1,9 @@
 #!/bin/bash
 
-# docker-compose up -d
-
-# docker container ls
-
-# set the admin password
-# docker-compose run pihole pihole -a -p
 docker-compose up -d
+
+# remove login password by setting empty password
+docker exec pihole sudo pihole -a -p
 
 DNS_SERVER_IP=$(docker inspect pihole | jq -r '.[0].NetworkSettings.Networks.pihole_default.IPAddress')
 dig @"$DNS_SERVER_IP"
